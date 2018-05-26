@@ -7,7 +7,7 @@ const chalk = require('chalk');
 const { spawn } = require('child_process')
 
 console.log(chalk.green('=> Moving template into root directory'));
-fs.copy(paths.template, paths.app);
+fs.copySync(paths.template, paths.app);
 console.log(chalk.green(`=> ${paths.template} ===> ${paths.app}`));
 console.log(chalk.green('=> Copying core scripts into package.json'));
 const currentPkg = JSON.parse(fs.readFileSync(path.join(paths.app, 'package.json'), 'utf-8'));
