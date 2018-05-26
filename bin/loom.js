@@ -11,7 +11,7 @@ switch(script) {
     case 'dev':
 
         const { spawn } = require('child_process');
-        const process = spawn(require.resolve('../scripts/' + script), {stdio: [0, 1, 2, 'ipc']});
+        const process = spawn(require('../scripts/' + script), {stdio: [0, 1, 2, 'ipc']});
 
     break;
 }
