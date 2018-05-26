@@ -9,9 +9,6 @@ switch(script) {
     case 'build':
     case 'install':
     case 'dev':
-
-        const { spawn } = require('child_process');
-        const process = spawn(require('../scripts/' + script), {stdio: [0, 1, 2, 'ipc']});
-
+        require('../scripts/' + script);
     break;
 }

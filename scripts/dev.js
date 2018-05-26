@@ -1,6 +1,8 @@
-const webpack = require("webpack");
-const chalk = require("chalk");
-const emojic = require("emojic");
+const paths = require('../config/paths');
+
+const webpack = require("../node_modules/webpack");
+const chalk = require("../node_modules/chalk");
+const emojic = require("../node_modules/emojic");
 
 const compiler = webpack(require('../webpack.dev.config.js'));
 
