@@ -4,10 +4,11 @@ const render = require('./render');
 
 module.exports = (Loom) => {
 
-    router.use(express.static('/assets'));
+    router.use(express.static('assets'));
 
     router.get('/*', (req, res) => {
         const page = Loom.content.get(req.originalUrl);
+        if (!page) return res.send(404);
         const html = Loom.render(page);
         res.send(html);
     });
