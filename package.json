@@ -22,7 +22,7 @@
   "bin": {
     "loom": "./bin/loom.js"
   },
-  "name": "Loom",
+  "name": "loom",
   "version": "0.0.1",
   "description": "Javascript flat file cms",
   "main": "index.js",
