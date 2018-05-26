@@ -21,5 +21,11 @@
   },
   "bin": {
     "loom": "./bin/loom.js"
-  }
+  },
+  "name": "Loom",
+  "version": "0.0.1",
+  "description": "Javascript flat file cms",
+  "main": "index.js",
+  "author": "Paul Westerdale <paul@threadstud.io>",
+  "license": "MIT"
 }
