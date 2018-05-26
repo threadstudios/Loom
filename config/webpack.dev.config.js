@@ -39,6 +39,7 @@ module.exports = {
     ],
     output: {
         path: `${paths.app}/assets`,
-        filename: 'index.js'
+        filename: 'index.js',
+        libraryTarget: 'assign'
     }
 };
