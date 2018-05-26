@@ -2,7 +2,7 @@ const webpack = require("webpack");
 const chalk = require("chalk");
 const emojic = require("emojic");
 
-const compiler = webpack(require('../webpack.dev.config.js'));
+const compiler = webpack(require('../config/webpack.dev.config.js'));
 
 compiler.watch({}, (err, stats) => {
     if (err) {
