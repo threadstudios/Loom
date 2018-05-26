@@ -39,7 +39,8 @@ module.exports = {
     ],
     output: {
         path: `${paths.app}/assets`,
-        filename: 'index.js',
-        libraryTarget: 'assign'
+        filename: 'script.js',
+        library: "loomFE",
+        libraryTarget: 'umd'
     }
 };
