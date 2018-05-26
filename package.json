@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "chokidar": "^2.0.3",
+    "express": "^4.16.3",
+    "fs-extra": "^6.0.1",
+    "nunjucks": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.47",
+    "@babel/preset-env": "^7.0.0-beta.47",
+    "babel-loader": "^8.0.0-beta",
+    "css-loader": "^0.28.11",
+    "emojic": "^1.1.14",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "sass-loader": "^7.0.0",
+    "style-loader": "^0.20.3",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.4"
+  },
+  "bin": {
+    "loom": "./bin/loom.js"
+  }
+}

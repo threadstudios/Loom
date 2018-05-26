@@ -1,0 +1,13 @@
+{
+    "type" : "Page",
+    "meta" : {
+        "title" : "Loom Starterkit"
+    },
+    "content" : [
+        {
+            "type" : "introduction",
+            "title" : "Welcome to Loom!",
+            "content" : "Loom is a basic flat file CMS for developers. It's written in 100% javascript and is built to be entirely customisable."
+        }
+    ]
+}
