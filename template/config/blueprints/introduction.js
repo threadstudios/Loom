@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     header : {
         type: "text",
         label: "Intro Title"

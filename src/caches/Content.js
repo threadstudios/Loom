@@ -14,8 +14,14 @@ class ContentCache extends CoreCache
         });
     }
     add(file) {
-        const filename = getFilename(file);
+        if (require.cache[file]) delete require.cache[file];
+        const filename = file.replace(`${paths.app}/content/`, "").split('.')[0];
         this.pages[filename === 'home' ? '/' : filename] = require(file);
+    }
+    getDir(dir) {
+        return Object.keys(this.pages)
+        .filter(key => key.indexOf(dir) !== -1)
+        .map(key => this.pages[key]); 
     }
     get(url) {
         return this.pages[url] ? this.pages[url] : false

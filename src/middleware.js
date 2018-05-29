@@ -8,7 +8,7 @@ module.exports = (Loom) => {
 
     router.get('/*', (req, res) => {
         const page = Loom.content.get(req.originalUrl);
-        if (!page) return res.send(404);
+        if (!page) return res.sendStatus(404);
         const html = Loom.render(page);
         res.send(html);
     });
