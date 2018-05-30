@@ -10,6 +10,8 @@
     "express": "^4.16.3",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "fs-extra": "^6.0.1",
+    "glob": "^7.1.2",
+    "kube": "https://github.com/imperavi/kube.git#master",
     "node-sass": "^4.9.0",
     "nunjucks": "^3.1.3",
     "sass-loader": "^7.0.0",
@@ -20,6 +22,9 @@
   },
   "bin": {
     "loom": "./bin/loom.js"
+  },
+  "scripts": {
+    "panel-dev": "./scripts/panelDev.js"
   },
   "name": "loom",
   "version": "0.0.1",

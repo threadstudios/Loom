@@ -2,6 +2,7 @@ const express = require('express')
 const PluginLibrary = require('./PluginLibrary');
 const TemplateCache = require('./caches/Template');
 const ContentCache = require('./caches/Content');
+const panel = require('./panel');
 const middleware = require('./middleware');
 const render = require('./render');
 
@@ -11,8 +12,9 @@ class Loom {
         this.cCache = new ContentCache();
         this.plugins = new PluginLibrary();
         const app = express();
-        return () => {
+        return async () => {
             const l = this;
+            await panel(l, app);
             return {
                 listen(port) {
                     port = port || 1777;
